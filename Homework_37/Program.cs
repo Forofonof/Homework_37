@@ -12,21 +12,21 @@ internal class Program
 
 class Player
 {
-    public string Nickname;
-    public int Level;
-    public int Health;
-    public int Damage;
+    private string _nickname;
+    private int _level;
+    private int _health;
+    private int _damage;
 
     public Player(string nickname, int level, int health, int damage)
     {
-        Nickname = nickname;
-        Level = level;
-        Health = health;
-        Damage = damage;
+        _nickname = nickname;
+        _level = level;
+        _health = health;
+        _damage = damage;
     }
 
     public void ShowInfo()
     {
-        Console.WriteLine($"Никнейм: {Nickname}.\nУровень: {Level}.\nЗдоровье: {Health}.\nУрон: {Damage}.");
+        Console.WriteLine($"Никнейм: {_nickname}.\nУровень: {_level}.\nЗдоровье: {_health}.\nУрон: {_damage}.");
     }
 }
